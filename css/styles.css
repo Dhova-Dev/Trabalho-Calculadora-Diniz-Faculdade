@@ -1,0 +1,115 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #f0f8ff;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100% - 100px); /* ajuste para acomodar o rodapé */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+label {
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+  text-align: center;
+}
+
+input[type=number], select, button {
+  font-size: 18px;
+  padding: 10px;
+  border: 2px solid #ff6347;
+  border-radius: 10px;
+  background-color: #fffacd;
+  margin: 10px;
+  box-shadow: 3px 3px 0px #ffa07a;
+  width: calc(100% - 40px);
+  max-width: 400px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #ffebcd;
+  color: #333;
+  padding: 10px;
+  border: 3px solid #ff6347;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #ffa07a;
+  transition: transform 0.2s;
+  width: calc(100% - 40px);
+  max-width: 400px;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+#output {
+  font-size: 18px;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #eef;
+  border: 2px solid #333;
+  width: calc(100% - 40px);
+  max-width: 400px;
+  box-sizing: border-box;
+  text-shadow: 2px 2px #ffa07a;
+  text-align: center;
+}
+
+#footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.name {
+  margin-top: 5px;
+}
+
+@media (max-width: 480px) {
+  #container {
+    padding: 10px;
+  }
+
+  input[type=number], select, button {
+    margin: 5px;
+    width: calc(100% - 20px);
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  input[type=number], select, button {
+    font-size: 16px;
+  }
+
+  button {
+    padding: 8px;
+  }
+
+  #output {
+    font-size: 16px;
+  }
+}

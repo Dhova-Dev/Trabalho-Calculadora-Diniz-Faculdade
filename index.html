@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>"Calculadora" Diniz</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div id="container">
+    <h1>Trabalho "Calculadora" Diniz</h1>
+    <label for="inputNumber" id="labelNumber1">Insira um número:</label>
+    <input type="number" id="inputNumber" placeholder="Insira um número">
+    
+    <label for="inputNumber2" id="labelNumber2" style="display: none;">Insira outro número:</label>
+    <input type="number" id="inputNumber2" placeholder="Insira outro número" style="display: none;">
+    
+    <label for="selectOperation">Escolha uma operação:</label>
+    <select id="selectOperation" onchange="toggleSecondInput()">
+      <option value="parImpar">Par ou Ímpar</option>
+      <option value="primoComposto">Primo ou Composto</option>
+      <option value="modulo">Módulo</option>
+      <option value="fatoracao">Fatoração</option>
+      <option value="mmc">MMC</option>
+      <option value="mdc">MDC</option>
+    </select>
+    
+    <button id="verifyButton" onclick="verificarNumero()">Verificar</button>
+    <div id="output"></div>
+  </div>
+  
+  <footer id="footer">
+    <div class="name">Lucas De Sousa Araujo</div>
+    <div class="name">Cayk Alves Dos Santos</div>
+    <div class="name">José Otávio Alves da Silva</div>
+  </footer>
+  
+  <script src="./js/script.js"></script>
+</body>
+</html>
